@@ -1,0 +1,22 @@
+{{ define "front/home.html" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>欢迎!</h1> <br>
+    <p style="background-color: green">{{.}}</p>
+    <button onclick="location.href='/register'" type="button" id="register">注册</button> <br>
+    <button onclick="location.href='/login'" type="button" id="login">登录</button> <br>
+
+</body>
+
+</html>
+
+{{ end }}

@@ -1,0 +1,28 @@
+{{ define "front/userinfo.html" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<h1>个人信息</h1> <br>
+
+
+<p>用户名:{{.username}}</p>
+<p>性别:{{.gender}}</p>
+<p>QQ:{{.qq}}</p>
+<p>邮箱:{{.email}}</p>
+<p>生日:{{.birthdate}}</p>
+
+<button onclick="location.href='/'" type="button" id="logout">退出</button> <br>
+</body>
+
+</html>
+
+{{ end }}
