@@ -10,4 +10,5 @@ type User struct {
 	Email     string
 	Qq        string
 	Birthdate string
+	Cookie    string
 }

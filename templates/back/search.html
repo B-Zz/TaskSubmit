@@ -1,0 +1,31 @@
+{{ define "back/search.html" }}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<button type="button" onclick='location.href=("/admin")'>返回</button> 如果想要退出，请点击返回，并在主页面点击退出按钮。<br>
+<h1>用户信息搜索</h1> <br>
+<form action="/admin/search" method="post">
+    请输入用户名：<input type="text" name="username" >
+    <input type="submit" value="搜索">
+</form>
+<p style="background-color: red">{{.info}}</p>
+<p>用户名:{{.username}}</p>
+<p>性别:{{.gender}}</p>
+<p>QQ:{{.qq}}</p>
+<p>邮箱:{{.email}}</p>
+<p>生日:{{.birthdate}}</p>
+
+
+</body>
+
+</html>
+
+{{ end }}

@@ -20,7 +20,10 @@
 <p>邮箱:{{.email}}</p>
 <p>生日:{{.birthdate}}</p>
 
-<button onclick="location.href='/'" type="button" id="logout">退出</button> <br>
+<form action="/userinfo" method="post">
+    <input type="submit" value="退出">
+</form>
+
 </body>
 
 </html>
